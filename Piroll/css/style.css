@@ -229,9 +229,39 @@ input {
 /* Numbers */
 
 .numbers {
-    height: 240px;
+    padding: 100px 0;
 
     background-color: #10c9c3;
+}
+
+.numbers__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers__item {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.numbers__icon {
+    margin-right: 25px;
+    font-family: "Pe -icon -7 stroke";
+    font-size: 48px;
+}
+
+.numbers__quantity {
+    font-size: 18px;
+}
+
+.numbers__title {
+    margin-top: 5px;
+
+    font-size: 12px;
+    font-weight: 500;
 }
 
 
@@ -460,7 +490,5 @@ input {
 /* Footer */
 
 .footer {
-    height: 284px;
-
     background-color: #141414;
 }
