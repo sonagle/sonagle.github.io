@@ -152,6 +152,10 @@ a {
     background-color: #d83838;
 }
 
+.btn--long {
+    min-width: 280px;
+}
+
 
 /* Features */
 
@@ -295,6 +299,10 @@ a {
     display: flex;
 }
 
+.social--footer {
+    justify-content: center;
+}
+
 .social__item {
     display: flex;
     justify-content: center;
@@ -306,6 +314,16 @@ a {
     border: 1px solid #e8ecee;
 
     transition: background .1s linear;
+}
+
+.social--footer .social__item {
+    margin-right: 7px;
+
+    border: 2px solid #ffffff;
+}
+
+.social--footer .social__item:last-child {
+    margin-right: 0;
 }
 
 .social__item:hover {
@@ -323,6 +341,10 @@ a {
     fill: #c6cacc;
 
     transition: fill .1s linear;
+}
+
+.social--footer .social__icon {
+    fill: #fff;
 }
 
 /* Testimonials */
@@ -368,16 +390,92 @@ a {
 }
 
 
+/* Download */
+
+.download {
+    margin: 100px 0;
+
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 16px;
+
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+}
+
+.download__text {
+    margin-bottom: 40px;
+
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3033;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
 
 
+/* Footer */
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 71px 0 88px;
+}
+
+.footer__block {
+    width: 33.33333%;
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 21px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__address {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    line-height: 1.5;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+}
 
 
+/* Copyright */
 
+.copyright {
+    padding: 22px 0;
 
+    background-color: #313454;
+}
 
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    line-height: 1.5;
+}
 
-
-
-
-
-
+.copyright__text span {
+    font-size: 13px;
+    color: #fff;
+}
