@@ -330,6 +330,10 @@ a {
     background-color: #e8ecee;
 }
 
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
 .social__item:hover .social__icon {
    fill: #000;
 }
