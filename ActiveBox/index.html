@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Favicons -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -36,11 +37,11 @@
     </symbol>
     <symbol id="linkedin" viewBox="0 0 510 510">
         <g id="post-linkedin">
-            <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
-                 M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
-                S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
-                V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
-    </g>
+            <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,	51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+                	M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+                	S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+                	V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
+    	</g>
     </symbol>
 </svg>
 
@@ -57,9 +58,12 @@
                 <a href="#" class="nav__link">Our Team</a>
                 <a href="#" class="nav__link">Testimonials</a>
                 <a href="#" class="nav__link">Download</a>
-            </nav>
+			</nav>
+			<button class="burger">
+				<span class="burger__item"></span>
+			</button>
         </div>
-    </div>
+    </div> 
 </header>
 
 <!-- Intro -->
@@ -277,7 +281,7 @@
     <div class="container">
         <div class="testimonials__item">
             <div class="testimonials__photo">
-                <img src="img/testimonials/testimonial-1.jpg" alt="">
+                <img class="testimonials__img" src="img/testimonials/testimonial-1.jpg" alt="">
             </div>
             <div class="testimonials__content">
                 <p class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
