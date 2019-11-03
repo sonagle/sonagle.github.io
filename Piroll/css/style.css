@@ -40,8 +40,10 @@ ul, li {
 
 .container {
     width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 
@@ -174,7 +176,8 @@ ul, li {
 /* Skills */
 
 .skills__inner {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .prof-skills {
@@ -246,13 +249,14 @@ ul, li {
 }
 
 .numbers__inner {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .numbers__item {
     display: flex;
-    align-items: center;
+	align-items: center;
+	width: 25%;
 
     color: #ffffff;
     text-transform: uppercase;
@@ -433,7 +437,6 @@ ul, li {
 }
 
 .services__text {
-    width: 235px;
     margin: 0 auto;
 
     font-family: "Nunito Sans";
@@ -610,4 +613,243 @@ ul, li {
 
 .footer__link:hover {
     color: #a5a5a5;
+}
+
+/* Burger */
+
+.burger {
+	display: none;
+	padding: 11px 2px;
+
+	background: none;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.burger__item {
+	display: block;
+	width: 30px;
+	height: 3px;
+
+	position: relative;
+
+	background-color: #000;
+}
+
+.burger__item:before,
+.burger__item:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	background-color: #000;
+}
+
+.burger__item:before {
+	bottom: 8px;
+}
+
+.burger__item:after {
+	top: 8px;
+}
+
+
+/* Media */
+
+@media (max-width:1024px) {
+
+	.header {
+		padding-bottom: 98px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.prof-skills {
+		padding: 80px 0;
+	}
+
+	.line {
+		width: 360px;
+	}
+
+	.works__item {
+		height: 228px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.intro__inner {
+		max-width: 100%;
+		margin: 0 auto;
+		margin-top: 90px;
+
+		text-align: center;
+	}
+
+	.about {
+		padding: 75px 0;
+	}
+
+	.skills__photo {
+		width: 100%;
+		height: 420px;
+	}
+
+	.prof-skills {
+		width: 100%;
+		padding: 60px 0;
+	}
+
+	.numbers {
+		padding: 75px 0 35px;
+	}
+
+	.numbers__item {
+		width: 50%;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.works__item {
+		width: 50%;
+		height: 330px;
+	}
+
+	.works__item:nth-child(1) {
+    background-color: #838383;
+	}
+
+	.works__item:nth-child(3) {
+		background-color: #ddd;
+	}
+
+	.works__item:nth-child(4) {
+		background-color: #838383;
+	}
+
+	.works__item:nth-child(5) {
+		background-color: #838383;
+	}
+
+	.works__item:nth-child(6) {
+		background-color: #ddd;
+	}
+
+	.process {
+		padding: 60px 0;
+	}
+
+	.process__video {
+		height: 370px;
+	}
+
+	.testimonials {
+		padding: 127px 0;
+	}
+
+
+
+
+	.contact {
+		display: none;
+	}
+
+	.clients {
+		display: none;
+	}
+	.services {
+		display: none;
+	}
+
+	.footer {
+		display: none;
+	}
+
+
+
+
+	
+}
+
+@media (max-width: 630px) {
+	.works__item {
+		width: 100%;
+	}
+
+	.works__item:nth-child(1) {
+		background-color: #838383;
+	}
+	
+	.works__item:nth-child(3) {
+		background-color: #838383;
+	}
+
+	.works__item:nth-child(4) {
+		background-color: #ddd;
+	}
+	
+	.works__item:nth-child(6) {
+		background-color: #ddd;
+	}
+
+	.works__item:nth-child(7) {
+		background-color: #838383;
+	}
+	
+	.works__item:nth-child(8) {
+		background-color: #ddd;
+	}
+}
+
+@media (max-width: 525px) {
+
+	.numbers__inner {
+		padding-left: 27%;
+	}
+
+	.numbers__item {
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.intro__title {
+		font-size: 32px;
+	}
+
+	.about__text {
+		margin-top: 20px;
+	}
+
+	.skills__photo {
+		height: 350px;
+	}
+
+	.testimonials {
+		padding: 90px 0;
+	}
+}
+
+@media (max-width: 375px) {
+	
+	.line {
+		width: 295px;
+	}
+
+	.numbers__inner {
+		padding-left: 14%;
+	}
 }
