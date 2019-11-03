@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+}
+
+.wrap {
+	width: 100%;
+
+}
+
+img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+} 
