@@ -688,7 +688,7 @@ ul, li {
 	}
 
 	.clients {
-		padding: 75px 0;
+		padding: 60px 0 20px;
 	}
 
 	.clients__inner {
@@ -781,7 +781,7 @@ ul, li {
 	}
 
 	.services {
-		padding: 50px 0;
+		padding: 40px 0;
 	}
 
 	.services__item {
@@ -861,6 +861,10 @@ ul, li {
 		width: 100%;
 	}
 
+	.contact {
+		padding: 60px 0 40px;
+	}
+
 	.footer {
 		padding: 35px 0;
 	}
@@ -887,7 +891,7 @@ ul, li {
 	}
 
 	.skills__photo {
-		height: 350px;
+		height: 290px;
 	}
 
 	.testimonials {
