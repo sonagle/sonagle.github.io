@@ -1,5 +1,5 @@
 # sonagle.github.io
 
-https://sonagle.github.io/Piroll/index.html
+https://sonagle.github.io/Piroll
 
-https://sonagle.github.io/ActiveBox/index.html
+https://sonagle.github.io/ActiveBox
