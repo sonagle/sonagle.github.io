@@ -302,7 +302,12 @@ fieldset {
 	align-items: center;
 }
 
-.get-price__text,
+.get-price__text {
+	margin-right: 30px;
+
+	font-size: 14px;
+}
+
 .get-price__icon {
 	margin-right: 30px;
 }
