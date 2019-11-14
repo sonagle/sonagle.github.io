@@ -66,15 +66,25 @@ p {
 	margin: 0;
 }
 
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
 .container {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 
 /* Btn */
 .btn {
+	padding: 0;
+
 	font-family: 'Proxima Nova Bold', sans-serif;
 	color: #fff;
 	text-transform: uppercase;
@@ -91,12 +101,63 @@ p {
 	font-size: 12px;
 }
 
+.btn--get-price {
+	width: 370px;
+	height: 80px;
+}
+
+.btn--price {
+	width: 370px;
+	padding: 28px 124px;
+
+	font-size: 17px;
+}
+
 .btn--blue {
 	background-color: #1669b3;
 }
 
 .btn--blue:hover {
 	background-color: #1d5b91;	
+}
+
+.btn--yellow {
+	background-color: #f7b516;
+}
+
+.btn--yellow:hover {
+	background-color: #f0ae16;
+}
+
+/* Field */
+.field {
+	width: 370px;
+	margin-right: 30px;
+	padding: 30px 30px;
+
+	background-color: #f2f2f2;
+	border: 0;
+
+	font-family: "Proxima Nova Rg";
+}
+
+.field::placeholder {
+	font-family: "Proxima Nova Rg";
+	font-size: 13px;
+	color: #818181;
+	text-transform: uppercase;
+}
+
+.field--phone {
+	padding-right: 71px;
+
+	background: #f2f2f2 url('../img/icons/call-answer.png') no-repeat  320px center;
+}
+
+.field--email {
+	padding-right: 71px;
+
+	background: #f2f2f2 url('../img/icons/envelope.png') no-repeat  320px center;
 }
 
 
@@ -203,14 +264,172 @@ p {
 }
 
 
-/* Price */
-.price {
-	background: url('../img/bg/price-bg.jpg') no-repeat center top / cover;
-	height: 500px;
+/* Get-price */
+.get-price {
+	padding: 100px 0;
+
+	background: url('../img/bg/get_price-bg.jpg') no-repeat center top / cover;
+
+	color: #000;
+} 
+
+.get-price__inner {
+	display: flex;
+    flex-direction: column;
+	align-items: flex-end;
+	
+    text-align: right;
 }
 
-/* .price__title {
+.get-price__title {
+	max-width: 443px;
+	margin-bottom: 60px;
+
 	font-family: "Proxima Nova Black";
 	font-size: 30px;
-	color: #000;
-} */
+}
+
+.get-price__form {
+	margin-bottom: 30px;
+}
+
+.get-price .field--phone {
+	margin-right: 0;
+}
+
+.get-price__block {
+	display: flex;
+	align-items: center;
+}
+
+.get-price__text,
+.get-price__icon {
+	margin-right: 30px;
+}
+
+
+
+
+/* Features */
+.features {
+	padding: 100px 0 75px;
+
+	text-align: center;
+
+	background-color: #08243e;
+}
+
+.features__title {
+	margin-bottom: 30px;
+
+	font-family: "Proxima Nova Black";
+	font-size: 36px;
+}
+
+.features__subtitle {
+	margin-bottom: 100px;
+
+	font-size: 20px;
+}
+
+.features__subtitle span {
+	display: block;
+}
+
+.features__inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.features__item {
+	width: 25%;
+	padding: 0 38px;
+	margin-bottom: 25px;
+}
+
+.features__icon {
+	height: 93px;
+
+	margin-bottom: 50px;
+}
+
+
+/* Price */
+.price {
+	height: 580px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Proxima Nova Rg";
+	text-align: center;
+
+	background: #123751 url('../img/bg/price.jpg') no-repeat center / cover;
+	
+}
+
+.price__title {
+	margin-bottom: 30px;
+	
+	font-size: 30px;
+}
+
+.price__subtitle {
+	margin-bottom: 60px;
+
+	font-size: 20px;
+}
+
+.price__subtitle span {
+	display: block;
+
+	text-transform: uppercase;
+}
+
+.price__form {
+	margin-bottom: 60px;
+}
+
+.price__info {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.price__field {
+	width: 370px;
+	margin-right: 30px;
+	padding: 30px 30px;
+
+	background-color: #f2f2f2;
+	border: 0;
+
+	font-family: "Proxima Nova Rg";
+}
+
+.price__field::placeholder {
+	font-family: "Proxima Nova Rg";
+	font-size: 13px;
+	color: #818181;
+	text-transform: uppercase;
+}
+
+.price__field_phone {
+	padding-right: 71px;
+
+	background: #f2f2f2 url('../img/icons/call-answer.png') no-repeat  320px center;
+}
+
+.price__text {
+	margin-bottom: 29px;
+
+	font-size: 14px;
+}
+
+.price__phone-block .price__text {
+	margin-bottom: 16px;
+}
+
+.price__phone {
+	font-family: "Proxima Nova Extrabld";
+	font-size: 30px;
+}
